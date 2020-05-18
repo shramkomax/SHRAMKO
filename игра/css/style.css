@@ -1,0 +1,196 @@
+#game-field{
+	width: 800px;
+	height: 500px;
+	margin: 0 auto;
+	position: relative;
+	background: url(gamearea.png);
+	overflow: hidden;
+}
+
+#info-block {
+	width: 800px;
+	border: 1px solid white;
+	margin: auto auto;
+	position: relative;
+}
+
+#timer-block {
+	position: relative;
+	display: inline;
+}
+
+.ball{
+	background: url(ball.jpg);
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: -100px; 
+	right: -100px;
+	display: block;
+	transition: all 0.6s;
+}
+
+.left {
+	top: 600px;
+	left: -100px;
+}
+
+.right {
+	top: 600px;
+	left: 900px;
+}
+
+.bomb{
+	background: url(bomb.png);
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: -150px; 
+	right: -100px;
+	display: block;
+	transition: all 0.2s;
+}
+
+.medicine {
+	background: url(medicine.png);
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: -150px; 
+	right: -100px;
+	display: block;
+	transition: all 0.2s;
+}
+
+.timerball{
+	background: url(timerball.png);
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+	top: -150px; 
+	right: -100px;
+	display: block;
+	transition: all 0.2s;
+}
+
+#score-points {
+	font-size: 34px;
+	color: #000;
+	font-weight: bold;
+	position: absolute;
+	top: 13px;
+	left: 400px;
+    display: block;
+}
+
+#lifes{
+	position: absolute;
+	top: 15px;
+	right: 10px;
+    display: block;
+}
+
+#lifes span {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border:3px solid #fff;
+	background: red;
+	display: block;
+	float: left;
+}
+
+#start-block {
+	width: 100%;
+	height: 100%;
+	background: url(start.png);
+	background-size: cover; 
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+}
+#start-block button {
+	margin-top: 170px;
+	margin-left: 165px;
+	display: block;
+	font-size: 30px;
+	float: left;
+    background: #0165ED;
+    color: #FFF;
+    width: 150px;
+    height: 150px;
+    line-height: 130px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #0165ED;
+    border: solid 10px #FFF;
+}
+
+#start-block button:hover {
+    background: #ED0101;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#end-block {
+width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    background: url(gameover.png);
+}
+
+#end-block button {
+	position: absolute;
+	top: 180px;
+	left: 40px;
+	display: block;
+	font-size: 28px;
+    background: #0165ED;
+    color: #FFF;
+    width: 190px;
+    height: 190px;
+    line-height: 150px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 5px #0165ED;
+    border: solid 10px #FFF;
+}
+
+#end-block button:hover {
+    background: #ED0101;
+    color: #FFF;
+    cursor: pointer;
+}
+
+#end-block h3 {
+	position: absolute;
+	top: -5px;
+	left: 190px;
+	color: #0165ED;
+}
+
+#backgroundaudio {
+	margin: 0 310px;
+	display: block;
+	position: absolute;
+
+}

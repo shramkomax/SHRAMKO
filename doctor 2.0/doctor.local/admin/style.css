@@ -1,0 +1,461 @@
+html {
+	height: 100%;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+body {
+	margin: 0;
+	background-image: url(/images/bg.jpg);
+	height: 100%;
+	background-size: cover; 
+}
+/*====================================
+Шапка сайта
+====================================*/
+
+thead,
+tbody {
+
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 30px;
+
+}
+
+#shapka {
+	width: 100%;
+	height: 100px;
+	background: black;
+}
+#logo{
+	width: 100px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+#logo img {
+	position: absolute;
+    width: 100%;
+    height: 100%;
+}
+#logo span {
+	font-size: 60px;
+    position: absolute;
+    top: 15px;
+    left: 107px;
+    color: white;
+}
+#menu {
+	float: right;
+	height: 100%;
+}
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    height: 100%;
+    display: block;
+    float: left;
+    line-height: 100px;
+    margin: 0 10px;
+}
+#menu a:hover {
+	background: grey;
+	color: black;
+	border-radius: 20px;
+}
+/*====================================
+Основной блок с конт и сообщениями
+====================================*/
+#content{
+	width: 800px;
+	height: calc(100% - 100px);
+	margin: 0 auto;
+
+}
+
+#content form{
+color: white;
+}
+
+#content button{
+font-family: 'Open Sans Condensed', sans-serif;
+font-size: 25px;
+border-radius: 10px;
+border: 2px solid black;
+b/*ackground: green;*/
+}
+
+#content a{
+color: white;
+/*text-decoration: none;*/
+
+}
+/*====================================
+Левый блок с поиском и контактами 
+====================================*/
+#users{
+    opacity: 0.8;
+    width: 250px;
+    height: 100%;
+    float: left;
+    border-radius: 20px;
+    border: 2px solid black;
+    background: white;
+}
+/*====================================
+Поиск
+====================================*/
+#poisk{
+	height: 30px;
+	padding: 10px;
+	width: 90%;
+/*	border: 2px solid black;
+	border-radius: 20px;*/
+}
+#poisk input {
+	background: white;
+	border: none;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	float: left;
+	margin-right: 10px;
+	width: calc(75% - 20px);
+	outline: none;
+	padding: 0 10px; 
+	border: 2px solid black;
+	border-radius: 10px;
+}
+#poisk button {
+	 width: 40px;
+    height: 30px;
+    border: none;
+   /* background: grey;*/
+    outline: none;
+    cursor: pointer;
+     padding: 0; 
+}
+#poisk button:active {
+background: #78442f;
+}  
+
+#poisk button img {
+	width: 100%;
+    height: 100%;
+}
+/*====================================
+Список контактов
+====================================*/
+#spisok {
+	height: calc(100% - 50px);
+	overflow-y: auto;
+
+}
+
+#spisok ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	
+
+}
+#spisok ul li {
+	font-size: 15px;
+    position: relative;
+    padding: 10px;
+    background: #00c4ff47;
+    border-radius: 20px;
+    margin: 10px;
+    height: 50px;
+}
+#spisok ul li a { 
+text-decoration: none;
+color: grey;
+}	
+
+#spisok ul .avatar {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-right: 10px;
+}
+
+#spisok ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+#spisok ul li .time{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+#spisok h2,
+#spisok p {
+   margin: 0;
+}
+#spisok h2{
+	margin-bottom: 5px; 
+}
+
+/*====================================
+отвечает за скролл
+====================================*/
+#spisok::-webkit-scrollbar-track,
+#spisok-soobsheniy::-webkit-scrollbar-track,
+.modal .content::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+#spisok::-webkit-scrollbar,
+#spisok-soobsheniy::-webkit-scrollbar,
+.modal .content::-webkit-scrollbar {
+	width: 2px;
+	background-color: #F5F5F5;
+}
+
+#spisok::-webkit-scrollbar-thumb,
+#spisok-soobsheniy::-webkit-scrollbar-thumb,
+.modal .content::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+/*====================================
+Стили для переписки с пользователем 
+====================================*/
+
+#soobshenie {
+	float: right;
+	width: calc(800px - 260px);
+	height: 100%;
+	
+}
+#spisok-soobsheniy{
+    height: 86%;
+    overflow-y: auto;
+    border: 2px solid;
+    border-radius: 20px;
+    background: white;
+    opacity: 0.8;
+}
+#soobshenie ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    font-size: 17px;
+
+}
+#soobshenie ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px; 
+}
+#soobshenie ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+#doc {
+    position: relative;
+    padding: 10px;
+    width: 70%;
+    background: #00cc99;
+    border-radius: 20px;
+    margin: 20px;
+    height: 60px;
+    margin-left: 128px;
+
+}
+
+#pei {
+    position: relative;
+    padding: 10px;
+    width: 70%;
+    background: #00c4ff47;
+    border-radius: 20px;
+    margin: 20px;
+    height: 60px;
+
+}
+
+#soobshenie ul li a {
+text-decoration: none;
+color: grey;
+}	
+
+#soobshenie ul h2,
+ #soobshenie ul p {
+	margin:0;
+}
+#soobshenie ul .time {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+/*====================================
+Стили для формочки отправки сообщений
+====================================*/
+#form {
+    padding: 10px;
+    height: 110px;
+}
+#form textarea {
+    width: 80%;
+    height: 87%;
+    border: 2px solid;
+    border-radius: 10px;
+    background: white;
+    opacity: 0.5;
+}
+#form button {
+    outline: none;
+    background: none;
+    width: 18%;
+    height: 104px;
+    cursor: pointer;
+    float: right;
+    border: 2px solid;
+    border-radius: 10px;
+}
+#form button img {
+	width: 100%;
+    height: 100%;
+}
+
+/*====================================
+Стили для модальных окон
+====================================*/
+
+.modal {
+	display: none;
+	width: 360px;
+	background: white;
+	border-radius: 10px;
+	border: 2px solid #78442f;
+	position: absolute;
+	top: 100px;
+	left:calc(50% - 200px);
+	padding: 20px;
+	max-height: 400px;
+	z-index: 9999;
+	
+
+}
+.modal .close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+
+}
+.modal .content{
+	overflow-y: auto;
+	height: 380px;
+	margin-top: 20px;
+
+}
+/*
+Модальное окно с контактами
+*/
+#contents-modal ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#contents-modal ul .avatar {
+	width: 60px;
+	height: 60px;
+	float: left;
+	margin-right: 10px; 
+}
+#contents-modal ul .avatar img {
+	width: 100%;
+	height: 100%;
+}
+#contents-modal ul li {
+position: relative;
+padding: 10px;
+}
+
+#contents-modal ul h2 {
+	margin:10px;
+
+}
+/*
+Модальное окно с контактами
+*/
+
+#exit-modal button {
+    border: 0;
+    outline: none;
+    background: none;
+    width: 12%;
+    height: 80%;
+    cursor: pointer;
+    float: right;
+}	
+#exit-modal button img {
+	width: 100%;
+    height: 100%;
+}
+#exit-modal input {
+	background: gray;
+	border: none;
+	padding: 0;
+	margin: 0;
+	float: left;
+	outline: none;
+	height: 30px;
+    width: 300px;
+}
+#exit-modal h2 {
+	width: 100px;
+	height: 50px;
+	margin: 0;
+	padding: 5px;
+	display: block;
+
+}
+
+
+table {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	background: grey; 
+	width: 1200px;
+	border-spacing: 0 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+}
+th {
+	padding: 10px 20px;
+	background: grey;
+	color: white;
+	border-right: 2px solid; 
+	font-size: 0.9em;
+}
+th:first-child {
+	text-align: left;
+}
+th:last-child {
+	border-right: none;
+}
+td {
+	vertical-align: middle;
+	padding: 10px;
+	font-size: 14px;
+	text-align: center;
+	border-top: 2px solid #56433D;
+	border-bottom: 2px solid #56433D;
+	border-right: 2px solid #56433D;
+}
+td:first-child {
+	border-left: 2px solid #56433D;
+	border-right: none;
+}
+td:nth-child(2){
+	text-align: left;
+}
